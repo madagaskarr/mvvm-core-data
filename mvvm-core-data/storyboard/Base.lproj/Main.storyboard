@@ -33,12 +33,34 @@
         <!--Add Task-->
         <scene sceneID="JML-Hv-0Pd">
             <objects>
-                <viewController id="1r0-UA-Hfs" sceneMemberID="viewController">
+                <viewController id="1r0-UA-Hfs" customClass="AddTaskViewController" customModule="mvvm_core_data" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KNk-0C-eHG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter task title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uLy-SN-gZi">
+                                <rect key="frame" x="16" y="120" width="382" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPc-tO-cNC">
+                                <rect key="frame" x="16" y="170" width="382" height="30"/>
+                                <state key="normal" title="Add Task"/>
+                                <connections>
+                                    <action selector="addTaskWasTaped:" destination="1r0-UA-Hfs" eventType="touchUpInside" id="A0K-3w-SZF"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="7cI-c7-ZGZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7cI-c7-ZGZ" firstAttribute="trailing" secondItem="SPc-tO-cNC" secondAttribute="trailing" constant="16" id="44V-nb-MBZ"/>
+                            <constraint firstItem="SPc-tO-cNC" firstAttribute="top" secondItem="uLy-SN-gZi" secondAttribute="bottom" constant="16" id="K2j-Ie-AMv"/>
+                            <constraint firstItem="uLy-SN-gZi" firstAttribute="leading" secondItem="7cI-c7-ZGZ" secondAttribute="leading" constant="16" id="NCY-rp-wb3"/>
+                            <constraint firstItem="7cI-c7-ZGZ" firstAttribute="trailing" secondItem="uLy-SN-gZi" secondAttribute="trailing" constant="16" id="bdu-he-VaE"/>
+                            <constraint firstItem="uLy-SN-gZi" firstAttribute="top" secondItem="7cI-c7-ZGZ" secondAttribute="top" constant="32" id="hTB-Vr-nUc"/>
+                            <constraint firstItem="SPc-tO-cNC" firstAttribute="leading" secondItem="7cI-c7-ZGZ" secondAttribute="leading" constant="16" id="im0-fd-gtF"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add Task" id="1UL-rj-VRb"/>
                 </viewController>

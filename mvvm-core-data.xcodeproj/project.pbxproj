@@ -21,6 +21,7 @@
 		09FC5D77269A28B500A60427 /* TaskEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FC5D73269A28B500A60427 /* TaskEntity+CoreDataProperties.swift */; };
 		09FC5D78269A28B500A60427 /* UserEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FC5D74269A28B500A60427 /* UserEntity+CoreDataClass.swift */; };
 		09FC5D79269A28B500A60427 /* UserEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FC5D75269A28B500A60427 /* UserEntity+CoreDataProperties.swift */; };
+		09FC5D7F269A2ED600A60427 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FC5D7E269A2ED600A60427 /* AddTaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		09FC5D73269A28B500A60427 /* TaskEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaskEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		09FC5D74269A28B500A60427 /* UserEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		09FC5D75269A28B500A60427 /* UserEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		09FC5D7E269A2ED600A60427 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				09FC5D4C269A121F00A60427 /* AllTasksController.swift */,
+				09FC5D7E269A2ED600A60427 /* AddTaskViewController.swift */,
 			);
 			path = viewcontroller;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09FC5D6E269A284500A60427 /* TaskRepository.swift in Sources */,
+				09FC5D7F269A2ED600A60427 /* AddTaskViewController.swift in Sources */,
 				09FC5D79269A28B500A60427 /* UserEntity+CoreDataProperties.swift in Sources */,
 				09FC5D78269A28B500A60427 /* UserEntity+CoreDataClass.swift in Sources */,
 				09FC5D4D269A121F00A60427 /* AllTasksController.swift in Sources */,
