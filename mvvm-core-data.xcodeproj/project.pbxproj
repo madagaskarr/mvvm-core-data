@@ -22,6 +22,9 @@
 		09FC5D78269A28B500A60427 /* UserEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FC5D74269A28B500A60427 /* UserEntity+CoreDataClass.swift */; };
 		09FC5D79269A28B500A60427 /* UserEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FC5D75269A28B500A60427 /* UserEntity+CoreDataProperties.swift */; };
 		09FC5D7F269A2ED600A60427 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FC5D7E269A2ED600A60427 /* AddTaskViewController.swift */; };
+		09FC5D82269A303B00A60427 /* AddTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FC5D81269A303B00A60427 /* AddTaskViewModel.swift */; };
+		09FC5D84269A322100A60427 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FC5D83269A322100A60427 /* CoreDataStack.swift */; };
+		09FC5D87269A349A00A60427 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FC5D86269A349A00A60427 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		09FC5D74269A28B500A60427 /* UserEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		09FC5D75269A28B500A60427 /* UserEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		09FC5D7E269A2ED600A60427 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		09FC5D81269A303B00A60427 /* AddTaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewModel.swift; sourceTree = "<group>"; };
+		09FC5D83269A322100A60427 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		09FC5D86269A349A00A60427 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,11 +80,12 @@
 		09FC5D47269A121F00A60427 /* mvvm-core-data */ = {
 			isa = PBXGroup;
 			children = (
+				09FC5D85269A347E00A60427 /* constants */,
+				09FC5D80269A2FC000A60427 /* coredata */,
 				09FC5D6A269A27D700A60427 /* task */,
 				09FC5D69269A273100A60427 /* support */,
 				09FC5D68269A26E300A60427 /* storyboard */,
 				09FC5D67269A26C900A60427 /* application */,
-				09FC5D51269A121F00A60427 /* mvvm_core_data.xcdatamodeld */,
 			);
 			path = "mvvm-core-data";
 			sourceTree = "<group>";
@@ -146,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				09FC5D6B269A280E00A60427 /* TaskViewModel.swift */,
+				09FC5D81269A303B00A60427 /* AddTaskViewModel.swift */,
 			);
 			path = viewmodel;
 			sourceTree = "<group>";
@@ -164,6 +172,23 @@
 				09FC5D6F269A286900A60427 /* TaskModel.swift */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		09FC5D80269A2FC000A60427 /* coredata */ = {
+			isa = PBXGroup;
+			children = (
+				09FC5D51269A121F00A60427 /* mvvm_core_data.xcdatamodeld */,
+				09FC5D83269A322100A60427 /* CoreDataStack.swift */,
+			);
+			path = coredata;
+			sourceTree = "<group>";
+		};
+		09FC5D85269A347E00A60427 /* constants */ = {
+			isa = PBXGroup;
+			children = (
+				09FC5D86269A349A00A60427 /* Constants.swift */,
+			);
+			path = constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,10 +263,13 @@
 			files = (
 				09FC5D6E269A284500A60427 /* TaskRepository.swift in Sources */,
 				09FC5D7F269A2ED600A60427 /* AddTaskViewController.swift in Sources */,
+				09FC5D82269A303B00A60427 /* AddTaskViewModel.swift in Sources */,
 				09FC5D79269A28B500A60427 /* UserEntity+CoreDataProperties.swift in Sources */,
 				09FC5D78269A28B500A60427 /* UserEntity+CoreDataClass.swift in Sources */,
+				09FC5D87269A349A00A60427 /* Constants.swift in Sources */,
 				09FC5D4D269A121F00A60427 /* AllTasksController.swift in Sources */,
 				09FC5D49269A121F00A60427 /* AppDelegate.swift in Sources */,
+				09FC5D84269A322100A60427 /* CoreDataStack.swift in Sources */,
 				09FC5D53269A121F00A60427 /* mvvm_core_data.xcdatamodeld in Sources */,
 				09FC5D6C269A280E00A60427 /* TaskViewModel.swift in Sources */,
 				09FC5D76269A28B500A60427 /* TaskEntity+CoreDataClass.swift in Sources */,

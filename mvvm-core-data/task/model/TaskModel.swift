@@ -8,5 +8,8 @@
 import Foundation
 
 struct TaskModel {
-    
+    var title: String
+    var description: String
+    var userName: String
+    var userImageUrl: String
 }

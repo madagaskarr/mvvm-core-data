@@ -8,5 +8,6 @@
 import Foundation
 
 protocol TaskRepository {
-    
+    func getAllTasks()
+    func addNewTask(tasl: TaskModel)
 }

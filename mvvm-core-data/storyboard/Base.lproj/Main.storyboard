@@ -63,6 +63,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add Task" id="1UL-rj-VRb"/>
+                    <connections>
+                        <outlet property="taskTitleEditText" destination="uLy-SN-gZi" id="GNC-fJ-47m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pFi-Oj-ZXy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
